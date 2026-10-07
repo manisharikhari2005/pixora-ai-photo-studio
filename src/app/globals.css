@@ -1,0 +1,152 @@
+
+@import "tailwindcss";
+
+:root {
+   --background: #fff9f6;
+  --foreground: #292525;
+
+  --surface: #ffffff;
+  --surface-elevated: #fffdfc;
+  --border: #e7dcda;
+
+  --accent: #b9656e;
+  --accent-soft: #f2d5d7;
+
+  --muted: #756b68;
+  --muted-dark: #9b8f8c;
+
+}
+
+html.dark {
+  --background: #292525;
+  --foreground: #f7f1ef;
+
+  --surface: #1d1a1bda;
+  --surface-elevated: #252122d8;
+  --border: #353031;
+
+  --accent: #d9828a;
+  --accent-soft: #4a3034;
+
+  --muted: #aaa19f;
+  --muted-dark: #77706e;
+
+
+
+
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+::selection {
+  background: var(--accent);
+  color: var(--background);
+}
+
+.nav-link {
+  position: relative;
+  font-size: 14px;
+  color: var(--muted);
+  transition: color 0.2s ease;
+}
+
+.nav-link:hover {
+  color: var(--foreground);
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+
+  width: 0;
+  height: 1px;
+
+  background: var(--accent);
+
+  transition: width 0.2s ease;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+
+.section-label {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  color: var(--accent);
+}
+
+
+.section-title {
+  margin-top: 12px;
+
+  font-size: clamp(2.5rem, 6vw, 4.5rem);
+  line-height: 0.98;
+  letter-spacing: -0.045em;
+  font-weight: 600;
+}
+
+.section-description {
+  margin-top: 20px;
+  max-width: 520px;
+
+  font-size: 15px;
+  line-height: 1.7;
+
+  color: var(--muted);
+}
+
+.avatar {
+  display: flex;
+
+  height: 28px;
+  width: 28px;
+
+  align-items: center;
+  justify-content: center;
+
+  border: 2px solid var(--background);
+  border-radius: 999px;
+
+  background: var(--accent-soft);
+  color: var(--foreground);
+
+  font-size: 9px;
+  font-weight: 600;
+}
+
+button {
+  cursor: pointer;
+}
+
+body,
+button,
+.nav-link,
+.avatar {
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease,
+    border-color 0.3s ease;
+}
+
