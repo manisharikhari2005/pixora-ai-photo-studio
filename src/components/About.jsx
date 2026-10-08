@@ -14,10 +14,13 @@ export default function Footer() {
       "
     >
       <div className="mx-auto max-w-6xl">
+
         {/* MAIN FOOTER */}
         <div className="flex flex-col gap-8 md:flex-row md:items-start md:justify-between">
+
           {/* BRAND */}
           <div className="max-w-[300px]">
+
             <div className="flex items-center gap-2.5">
               <div
                 className="
@@ -58,10 +61,12 @@ export default function Footer() {
               Open Pixora App
               <ArrowUpRight size={12} />
             </Link>
+
           </div>
 
           {/* LINKS */}
           <div className="flex flex-wrap gap-x-12 gap-y-6 mt-10">
+
             {/* PRODUCT */}
             <div className="min-w-[190px]">
               <p className="mb-3 text-[10px] font-semibold uppercase tracking-[0.16em] text-[var(--foreground)]">
@@ -82,6 +87,8 @@ export default function Footer() {
                 >
                   Tools
                 </Link>
+
+            
               </div>
             </div>
 
@@ -98,43 +105,47 @@ export default function Footer() {
                 <span>AI Headshots</span>
               </div>
             </div>
+
           </div>
         </div>
 
         {/* BOTTOM */}
-        <div
-          className="
+      <div
+  className="
     mt-8 flex flex-col gap-3
     border-t border-[var(--border)]
     pt-5
     text-[10px] text-[var(--muted-dark)]
     sm:flex-row sm:items-center sm:justify-between
   "
-        >
-          <p>© 2026 Pixora. Made for better photos.</p>
+>
+  <p>
+    © 2026 Pixora. Made for better photos.
+  </p>
 
-          <div className="flex items-center gap-4">
-            <Link
-              href="/privacy"
-              className="transition-colors hover:text-[var(--foreground)]"
-            >
-              Privacy Policy
-            </Link>
+  <div className="flex items-center gap-4">
+    <Link
+      href="/privacy"
+      className="transition-colors hover:text-[var(--foreground)]"
+    >
+      Privacy Policy
+    </Link>
 
-            <Link
-              href="/terms"
-              className="transition-colors hover:text-[var(--foreground)]"
-            >
-              Terms & Conditions
-            </Link>
+    <Link
+      href="/terms"
+      className="transition-colors hover:text-[var(--foreground)]"
+    >
+      Terms & Conditions
+    </Link>
 
-            <span className="hidden h-3 w-px bg-[var(--border)] sm:block" />
+    <span className="hidden h-3 w-px bg-[var(--border)] sm:block" />
 
-            <span className="hidden sm:block">
-              AI-powered photo editing, simplified.
-            </span>
-          </div>
-        </div>
+    <span className="hidden sm:block">
+      AI-powered photo editing, simplified.
+    </span>
+  </div>
+</div>
+
       </div>
     </footer>
   );

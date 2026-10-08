@@ -24,8 +24,6 @@ export default function Hero() {
               all from one simple creative studio.
             </p>
 
-      
-
             {/* Small line */}
             <div className="mt-6 flex items-center gap-2.5 text-[11px] text-[var(--muted)]">
               <div className="flex -space-x-1.5">
@@ -69,24 +67,29 @@ export default function Hero() {
             {/* MAIN SCREENSHOT */}
             <div
               className="
-      absolute
-      right-0
-      top-0
-      z-20
-      w-[88%]
-      overflow-hidden
-      rounded-xl
-      border border-[var(--border)]
-      bg-[var(--surface)]
-      shadow-xl
-      transition-transform
-      duration-500
-      hover:-translate-y-1
-      sm:w-[84%]
-      sm:rounded-[1.25rem]
+  absolute
+  top-0
+  left-1/2
+  z-20
+  w-[78%]
+  -translate-x-1/2
+  overflow-hidden
+  rounded-xl
+  border border-[var(--border)]
+  bg-[var(--surface)]
+  shadow-xl
+  transition-transform
+  duration-500
+  hover:-translate-y-1
+  sm:left-auto
+  sm:right-0
+  sm:translate-x-0
+  sm:w-[64%]
+  sm:rounded-[1.25rem]
+
     "
             >
-              <div className="border-b border-[var(--border)] px-2.5 py-2 sm:px-3 sm:py-2.5">
+              <div className="border-b border-[var(--border)] px-2.5 py-2 sm:px-5 sm:py-2.5 ">
                 <div className="flex items-center justify-between">
                   <div>
                     <p className="text-[7px] font-semibold uppercase tracking-[0.16em] text-[var(--accent)] sm:text-[8px]">
@@ -106,92 +109,12 @@ export default function Hero() {
                 </div>
               </div>
 
-              <div className="aspect-[16/10] overflow-hidden bg-[var(--surface-elevated)]">
+              <div className="aspect-[16/22] overflow-hidden bg-[var(--surface-elevated)] ">
                 <img
-                  src="/images/hero/editor.png"
+                  src="/app-UI.png"
                   alt="Pixora AI photo editor"
-                  className="h-full w-full object-cover"
+                  className="h-full w-full object-contain"
                 />
-              </div>
-            </div>
-
-            {/* BEFORE / AFTER */}
-            <div
-              className="
-      absolute
-      bottom-2
-      left-0
-      z-30
-      w-[44%]
-      overflow-hidden
-      rounded-lg
-      border border-[var(--border)]
-      bg-[var(--surface)]
-      shadow-lg
-      transition-transform
-      duration-500
-      hover:-translate-y-1
-      sm:bottom-4
-      sm:w-[43%]
-      sm:rounded-xl
-    "
-            >
-              <div className="aspect-[4/3] overflow-hidden">
-                <img
-                  src="/images/hero/before-after.png"
-                  alt="Pixora before and after"
-                  className="h-full w-full object-cover"
-                />
-              </div>
-
-              <div className="px-2 py-1.5 sm:px-2.5 sm:py-2">
-                <p className="text-[7px] uppercase tracking-[0.14em] text-[var(--muted)] sm:text-[8px]">
-                  AI Enhance
-                </p>
-
-                <p className="mt-0.5 text-[9px] font-semibold text-[var(--foreground)] sm:text-[10px]">
-                  Before → After
-                </p>
-              </div>
-            </div>
-
-            {/* STYLES */}
-            <div
-              className="
-      absolute
-      bottom-7
-      right-0
-      z-30
-      w-[31%]
-      overflow-hidden
-      rounded-lg
-      border border-[var(--border)]
-      bg-[var(--surface)]
-      shadow-lg
-      transition-transform
-      duration-500
-      hover:translate-y-1
-      sm:bottom-12
-      sm:w-[34%]
-      sm:rounded-xl
-    "
-            >
-              <div className="aspect-[4/3] overflow-hidden">
-                <img
-                  src="/images/hero/styles.png"
-                  alt="Pixora creative styles"
-                  className="h-full w-full object-cover"
-                />
-              </div>
-
-              <div className="px-2 py-1.5 sm:px-2.5 sm:py-2">
-                <p className="text-[7px] uppercase tracking-[0.14em] text-[var(--muted)] sm:text-[8px]">
-                  Creative AI
-                </p>
-
-                <p className="mt-0.5 text-[9px] font-semibold text-[var(--foreground)] sm:text-[10px]">
-                  Explore styles
-                </p>
               </div>
             </div>
           </div>

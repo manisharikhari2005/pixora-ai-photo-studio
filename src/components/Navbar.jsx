@@ -48,7 +48,7 @@ export default function Navbar() {
         "
       >
         {/* TOP BAR */}
-        <div className="flex items-center justify-between">
+        <div className="flex items-center justify-between ">
 
           {/* LOGO */}
           <Link
@@ -75,7 +75,7 @@ export default function Navbar() {
           </Link>
 
           {/* DESKTOP NAV */}
-          <div className="hidden items-center gap-6 md:flex lg:gap-7">
+          <div className="hidden items-center gap-6 md:flex lg:gap-7 ml-130">
             <a href="#home" className="nav-link">
               Home
             </a>
@@ -92,13 +92,7 @@ export default function Navbar() {
               About
             </a>
 
-            <Link href="/privacy" className="nav-link">
-              Privacy
-            </Link>
-
-            <Link href="/terms" className="nav-link">
-              Terms
-            </Link>
+         
           </div>
 
           {/* DESKTOP ACTIONS */}
